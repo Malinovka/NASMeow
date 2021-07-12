@@ -1,4 +1,4 @@
-;---Functions
+;---FUNCTIONS
 
 ; RTC count one second
 rtc_sec:
@@ -69,7 +69,7 @@ POP EAX
 POP EBX
 RET 4
 
-;---Main
+;---MAIN
 
 global _start
 _start:
@@ -103,7 +103,7 @@ CALL rtc_sec
 CALL counter
 JMP animate
 
-;---Data
+;---DATA
 
 ; ESC, Clear Screen, ESC, Cursor Position Reset
 clear db 0x1B,'[2J',0
