@@ -1,5 +1,5 @@
 # NASMeow
-Just a cute cat written in assembly
+Just a cute RTC-driven cat animation written in NASM running in ring zero
 
 ![NASMeow](https://user-images.githubusercontent.com/84699546/125364086-b7645380-e326-11eb-8a17-9ac129b000fb.gif)
 
@@ -7,5 +7,5 @@ Just a cute cat written in assembly
 * *Life-like feline movements*
 * *No practical uses*
 
-Writes directly from and to I/O ports (Serial I/O for output and and RTC for timing). No interrupts.
-This will only run at kernel-level, so kexec or boot into it some other way if (for some reason) you wanted to see it in action.
+Reads/writes directly to I/O ports (Serial I/O --> UART for output, and RTC for timing). No interrupts.
+Runs in ring zero, so must be booted or kexec'd if (for some reason) you wanted to see it in action.
